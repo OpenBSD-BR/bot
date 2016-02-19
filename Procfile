@@ -1,1 +1,0 @@
-bluebot: bundle exec ruby bluebot.rb
