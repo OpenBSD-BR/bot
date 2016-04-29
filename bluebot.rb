@@ -69,8 +69,12 @@ bot = Cinch::Bot.new do
 
   # Let Me Google That For You
 
-  on :message, /\A!google (.+)/ do |m, what|
+  on :message, /\A!lmgtfy (.+)/ do |m, what|
     m.reply "http://lmgtfy.com/?q=#{URI::encode(what)}"
+  end  
+
+  on :message, /\A!google (.+)/ do |m, what|
+		m.reply "http://www.google.com/search?q=#{URI::encode(what)}"
   end  
 
   on :message, "!journal" do |m|
