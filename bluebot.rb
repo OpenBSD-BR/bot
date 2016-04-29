@@ -79,7 +79,6 @@ bot = Cinch::Bot.new do
   end
 
   # Karma
-=begin 
 
   on :message, /\A(\S+)\+\+/ do |m, what|
     add_karma(db, what, 1)
@@ -129,7 +128,6 @@ bot = Cinch::Bot.new do
       m.reply "Quotes matching \"#{keywords}\": #{indexes}."
     end
   end
-=end
 
   # Seen
 
