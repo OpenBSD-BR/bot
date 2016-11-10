@@ -100,6 +100,10 @@ bot = Cinch::Bot.new do
     m.reply get_karma(db, what)
   end  
 
+  on :message, "!openbsd" do |m|
+    m.reply "http://www.openbsd.org | http://www.openbsd-br.org"
+  end
+
   # Quotes
   
   on :message, /\A!addquote (.+)/ do |m, quote|
