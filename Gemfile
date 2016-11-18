@@ -11,4 +11,4 @@ gem "cinch-urbandict",   "~> 1.0.3"
 gem "cinch-wikipedia",   "~> 1.0.3"
 gem "cleverbot",         "~> 0.2.0"
 gem "simple-rss",		 "~> 1.3.1"
-gem "htmlentities",	"~> 4.3.4"
+gem 'htmlentities', '~> 4.3', '>= 4.3.4'
