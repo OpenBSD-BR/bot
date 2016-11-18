@@ -9,6 +9,8 @@ require "cinch/plugins/wikipedia"
 require 'rubygems'
 require 'simple-rss'
 require 'open-uri'
+require 'htmlentities'
+
 
 require_relative "plugins/cleverbot"
 
@@ -79,7 +81,8 @@ bot = Cinch::Bot.new do
 
   on :message, "!journal" do |m|
     m.reply rss.items.first.title
-    m.reply rss.items.first.link
+    rssLink HTMLEntities.new.decode rss.items.first.link
+    m.reply rssLink
   end
 
   # Karma
