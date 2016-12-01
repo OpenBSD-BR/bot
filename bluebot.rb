@@ -67,6 +67,12 @@ bot = Cinch::Bot.new do
 
   on :message, "!help" do |m|
     m.reply "See https://github.com/Bluebot/Bluebot#supported-commands for a list of supported actions."
+    m.reply ""
+    m.reply "!lmgtfy"
+    m.reply "!google"
+    m.reply "!journal"
+    m.reply "!karma"
+    m.reply "!quote"
   end
 
   # Let Me Google That For You
