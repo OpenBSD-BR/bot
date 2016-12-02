@@ -17,10 +17,11 @@ require_relative "plugins/cleverbot"
 include Mongo
 
 def get_db
-  if ENV["MONGOHQ_URL"].nil?
+  #if ENV["MONGOHQ_URL"].nil?
+  if ENV["MONGODB_URI"].nil?
     MongoClient.new("localhost", 27017).db("bluebot")
   else
-    mongo_uri = ENV["MONGOHQ_URL"]
+    mongo_uri = ENV["MONGODB_URI"]
     db_name = mongo_uri[%r{/([^/\?]+)(\?|$)}, 1]
     MongoClient.from_uri(mongo_uri).db(db_name)
   end
