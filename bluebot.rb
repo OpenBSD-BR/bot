@@ -11,6 +11,7 @@ require 'simple-rss'
 require 'open-uri'
 require 'htmlentities'
 
+# Revisar
 
 require_relative "plugins/cleverbot"
 
