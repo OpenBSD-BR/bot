@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-ruby "2.0.0"
+ruby "2.3.3"
 
 gem "mongo",             "~> 1.9.2"
 gem "bson_ext",          "~> 1.9.2"
